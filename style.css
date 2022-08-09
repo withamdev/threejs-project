@@ -1,0 +1,31 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  background-color: rgb(59, 59, 59);
+  margin: 0px;
+  color: rgb(255, 255, 255);
+}
+
+canvas {
+  display: block;
+}
+
+#message {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  /* border: 5px solid greenyellow; */
+}
+
+span {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

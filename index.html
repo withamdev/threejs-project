@@ -8,19 +8,11 @@
       name="viewport"
       content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
-    <style>
-      body {
-        font-family: sans-serif;
-        font-size: 11px;
-        background-color: #000;
-        margin: 0px;
-      }
-      canvas {
-        display: block;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body ontouchstart="">
+    <script src="./js/messagescript.js"></script>
+
     <script type="module">
       import * as THREE from "./js/three.module.js";
       import { APP } from "./js/app.js";
@@ -50,5 +42,6 @@
       // button.textContent = 'EDIT';
       // document.body.appendChild( button );
     </script>
+    <p id="message"></p>
   </body>
 </html>
